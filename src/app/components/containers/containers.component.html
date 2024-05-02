@@ -1,0 +1,7 @@
+<p>List of containers availabe</p>
+
+<div>
+    <ng-container *ngFor="let container of containers | async">
+        <button class="button" routerLink="/container-contents/{{container.id}}">Container {{container.id}}</button><p></p>
+    </ng-container>
+</div>
